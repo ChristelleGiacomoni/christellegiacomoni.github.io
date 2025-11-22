@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christelle GIACOMONI - Consultante GRH, Management & Médiation | Experte en Dynamiques Relationnelles</title>
+    <meta name="description" content="Christelle GIACOMONI, consultante-formatrice en GRH et management stratégique. Experte en médiation, dynamiques relationnelles, résolution de conflits en entreprise, coaching de couples et familles.">
+    <meta name="keywords" content="Christelle GIACOMONI, consultante GRH, formatrice management, médiation professionnelle, dynamiques relationnelles, coach relationnel, résolution conflits entreprise, coaching couple, thérapie familiale, management stratégique, intelligence émotionnelle, communication non-violente, gestion ressources humaines">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-white via-amber-50 to-white text-gray-900">
+    <div class="max-w-5xl mx-auto p-8">
+        <!-- Header -->
+        <header class="text-center mb-12 relative">
+            <!-- Sword background -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-64 h-64 text-amber-300 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m0-16l-8 8m8-8l8 8"/>
+                </svg>
+            </div>
+            
+            <!-- Photo -->
+            <div class="relative z-10 mb-6 flex justify-center">
+                <div class="w-40 h-40 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center border-4 border-amber-500 shadow-2xl">
+                    <span class="text-6xl font-serif text-white">CG</span>
+                </div>
+            </div>
+
+            <h1 class="text-5xl font-bold mb-2 gradient-text relative z-10">
+                Dame Christelle GIACOMONI
+            </h1>
+            <p class="text-2xl text-amber-700 font-semibold mb-2 relative z-10">
+                La Médiatrice des Liens
+            </p>
+            <p class="text-lg text-gray-700 italic mb-6 relative z-10">
+                Consultante - Formatrice en GRH, Management stratégique<br>
+                et experte en dynamiques relationnelles
+            </p>
+
+            <!-- Contact Links -->
+            <div class="flex flex-wrap justify-center gap-4 relative z-10">
+                <a href="https://www.linkedin.com/in/christellegiacomoni" target="_blank" rel="noopener noreferrer" 
+                   class="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://www.youtube.com/@christellegia" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                    YouTube
+                </a>
+                <a href="https://viadeo.journaldunet.com/p/christelle-giacomoni-77948" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    Viadeo
+                </a>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="flex flex-wrap justify-center gap-4 mb-8">
+            <button onclick="showTab('identity')" id="btn-identity" class="tab-btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all bg-amber-500 text-white shadow-lg shadow-amber-400/50">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Identité
+            </button>
+            <button onclick="showTab('powers')" id="btn-powers" class="tab-btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all bg-amber-100 hover:bg-amber-200 text-amber-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                Expertises
+            </button>
+            <button onclick="showTab('aesthetic')" id="btn-aesthetic" class="tab-btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all bg-amber-100 hover:bg-amber-200 text-amber-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Qualités
+            </button>
+            <button onclick="showTab('philosophy')" id="btn-philosophy" class="tab-btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all bg-amber-100 hover:bg-amber-200 text-amber-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                Philosophie
+            </button>
+        </nav>
+
+        <!-- Content Sections -->
+        <main class="bg-white/80 backdrop-blur-sm border border-amber-300 rounded-xl p-8 shadow-2xl">
+            
+            <!-- Identity Tab -->
+            <article id="tab-identity" class="tab-content">
+                <h2 class="text-3xl font-bold text-amber-700 flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    Identité Professionnelle
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md">
+                        <h3 class="text-xl font-semibold text-amber-700 mb-3">Titre</h3>
+                        <p class="text-gray-800">Dame Christelle GIACOMONI, Chevalière des Relations et des Stratégies</p>
+                    </section>
+                    
+                    <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md">
+                        <h3 class="text-xl font-semibold text-amber-700 mb-3">Essence</h3>
+                        <p class="text-gray-800">Guerrière sage, stratège du cœur et des organisations</p>
+                    </section>
+                </div>
+
+                <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md mb-6">
+                    <h3 class="text-xl font-semibold text-amber-700 mb-3">Parcours</h3>
+                    <p class="text-gray-800 leading-relaxed">
+                        Issue d'une lignée de médiateurs et stratèges relationnels, Christelle a fusionné la sagesse 
+                        ancestrale des conseils royaux avec l'expertise moderne du management et de la GRH. Formée aux 
+                        dynamiques humaines les plus complexes, elle a également traversé personnellement les épreuves 
+                        relationnelles qu'elle accompagne aujourd'hui. C'est cette double perspective - formation 
+                        professionnelle et expérience vécue - qui nourrit son approche unique et authentique. 
+                        Elle a développé une capacité singulière à déchiffrer les batailles visibles et invisibles : 
+                        celles du cœur, de la famille et du pouvoir professionnel des organisations.
+                    </p>
+                </section>
+
+                <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-700 mb-3">Mission</h3>
+                    <p class="text-gray-800 leading-relaxed mb-4">
+                        Restaurer l'harmonie dans les royaumes fracturés des relations humaines, qu'il s'agisse 
+                        de couples déchirés, de familles en conflit ou d'organisations professionnelles divisées. 
+                        Transformer les tensions en opportunités de croissance et de reconnexion authentique.
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t-2 border-amber-200">
+                        <h4 class="text-lg font-semibold text-amber-800 mb-4">Mon Approche Unique : L'Accompagnement 360°</h4>
+                        <p class="text-gray-800 leading-relaxed mb-4">
+                            Contrairement aux approches traditionnelles qui segmentent vie personnelle et professionnelle, 
+                            j'offre un <strong class="text-amber-700">accompagnement holistique et transversal</strong> qui reconnaît 
+                            que vos tensions professionnelles impactent votre couple, que vos conflits familiaux affectent 
+                            votre leadership, et que votre épanouissement relationnel nourrit votre réussite organisationnelle.
+                        </p>
+                        
+                        <h4 class="text-lg font-semibold text-amber-800 mb-3 mt-5">Vous êtes concerné(e) si :</h4>
+                        <ul class="space-y-3 text-gray-800">
+                            <li class="flex items-start gap-3">
+                                <span class="text-pink-600 font-bold mt-1">❤️</span>
+                                <span>Vous êtes <strong>en couple</strong> et sentez la distance s'installer malgré l'amour, les non-dits s'accumuler, ou les mêmes conflits se répéter sans issue</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-600 font-bold mt-1">👨‍👩‍👧‍👦</span>
+                                <span>Vous êtes <strong>parent</strong> et vivez des tensions familiales qui vous épuisent, une communication difficile avec vos enfants ou adolescents, ou des conflits intergénérationnels</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-amber-600 font-bold mt-1">💼</span>
+                                <span>Vous êtes <strong>dirigeant(e) ou manager</strong> confronté(e) à des conflits d'équipe récurrents, un climat tendu qui impacte la performance, ou vous souhaitez développer un leadership plus humain</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-purple-600 font-bold mt-1">⚖️</span>
+                                <span>Vous vivez <strong>plusieurs de ces situations simultanément</strong> et ressentez que tout est interconnecté, que vous avez besoin d'une approche globale qui ne vous fragmente pas</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-6 p-4 bg-gradient-to-r from-amber-100 to-yellow-100 rounded-lg border border-amber-400">
+                            <p class="text-amber-900 font-medium text-center">
+                                🌟 <strong>Ma promesse :</strong> Un accompagnement sur mesure qui tisse les liens entre toutes vos dimensions, 
+                                pour une transformation profonde et durable de vos relations, dans tous vos espaces de vie.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Powers Tab -->
+            <article id="tab-powers" class="tab-content hidden">
+                <h2 class="text-3xl font-bold text-amber-700 flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    Expertises Relationnelles
+                </h2>
+
+                <section class="bg-gradient-to-r from-pink-50 to-amber-50 p-6 rounded-lg border border-pink-300 shadow-md mb-4">
+                    <div class="flex items-center gap-3 mb-3">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        <h3 class="text-xl font-semibold text-pink-700">Médiation de Couple & Coaching Relationnel</h3>
+                    </div>
+                    <p class="text-gray-800 mb-3">
+                        Capacité à percevoir les fils invisibles qui unissent les couples, à détecter les nœuds 
+                        et les fissures avant qu'ils ne deviennent des gouffres. Restauration des liens affectifs.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                        <li>Décryptage des non-dits et des blessures cachées</li>
+                        <li>Restauration de la communication authentique</li>
+                        <li>Alchimie de la reconnexion émotionnelle</li>
+                        <li>Accompagnement dans les transitions de vie</li>
+                    </ul>
+                </section>
+
+                <section class="bg-gradient-to-r from-blue-50 to-amber-50 p-6 rounded-lg border border-blue-300 shadow-md mb-4">
+                    <div class="flex items-center gap-3 mb-3">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        <h3 class="text-xl font-semibold text-blue-700">Harmonie Familiale & Médiation Intergénérationnelle</h3>
+                    </div>
+                    <p class="text-gray-800 mb-3">
+                        Maîtrise des dynamiques intergénérationnelles, guérison des conflits parent-enfant. 
+                        Création d'espaces de dialogue sécurisés pour toute la famille.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                        <li>Médiation des tensions familiales</li>
+                        <li>Compréhension des besoins développementaux</li>
+                        <li>Création d'espaces de dialogue sécurisés</li>
+                        <li>Accompagnement éducatif et parental</li>
+                    </ul>
+                </section>
+
+                <section class="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 rounded-lg border border-amber-400 shadow-md">
+                    <div class="flex items-center gap-3 mb-3">
+                        <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <h3 class="text-xl font-semibold text-amber-800">Management Stratégique & Consulting RH</h3>
+                    </div>
+                    <p class="text-gray-800 mb-3">
+                        Intelligence politique et émotionnelle dans les structures de pouvoir corporatives. 
+                        Transformation des cultures d'entreprise par l'intelligence relationnelle.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                        <li>Résolution de conflits d'équipe et médiation professionnelle</li>
+                        <li>Transformation de la culture d'entreprise</li>
+                        <li>Leadership empathique et assertif</li>
+                        <li>Formation en gestion des ressources humaines</li>
+                        <li>Accompagnement au changement organisationnel</li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Aesthetic Tab -->
+            <article id="tab-aesthetic" class="tab-content hidden">
+                <h2 class="text-3xl font-bold text-amber-700 flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    Qualités Professionnelles
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md">
+                        <h3 class="text-xl font-semibold text-amber-700 mb-3">Armure Relationnelle</h3>
+                        <ul class="text-gray-800 space-y-2">
+                            <li>• Écoute active profonde et bienveillante</li>
+                            <li>• Assertivité tempérée par la compassion</li>
+                            <li>• Présence authentique et stabilisante</li>
+                            <li>• Capacité à créer un espace de sécurité</li>
+                        </ul>
+                    </section>
+
+                    <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md">
+                        <h3 class="text-xl font-semibold text-amber-700 mb-3">Attributs de Pouvoir</h3>
+                        <ul class="text-gray-800 space-y-2">
+                            <li>• Intelligence émotionnelle aiguisée</li>
+                            <li>• Vision systémique des dynamiques</li>
+                            <li>• Patience stratégique et résilience</li>
+                            <li>• Sagesse issue de l'expérience terrain</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md mb-6">
+                    <h3 class="text-xl font-semibold text-amber-700 mb-3">Outils Symboliques</h3>
+                    <div class="grid md:grid-cols-3 gap-4 mt-4">
+                        <div class="text-center">
+                            <svg class="w-12 h-12 mx-auto mb-2 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0-16l-8 8m8-8l8 8"/></svg>
+                            <p class="font-semibold text-amber-700">L'Épée de Vérité</p>
+                            <p class="text-sm text-gray-700">Tranche les illusions et révèle l'authenticité</p>
+                        </div>
+                        <div class="text-center">
+                            <svg class="w-12 h-12 mx-auto mb-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            <p class="font-semibold text-blue-700">Le Bouclier d'Empathie</p>
+                            <p class="text-sm text-gray-700">Protège les vulnérables et crée la sécurité</p>
+                        </div>
+                        <div class="text-center">
+                            <svg class="w-12 h-12 mx-auto mb-2 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                            <p class="font-semibold text-pink-700">Le Grimoire des Liens</p>
+                            <p class="text-sm text-gray-700">Contient les secrets des relations</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-700 mb-3">Identité Visuelle</h3>
+                    <div class="flex flex-wrap gap-4 mt-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-12 h-12 rounded-full bg-amber-500 border-2 border-amber-400 shadow-md"></div>
+                            <span class="text-gray-800">Or lumineux</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-12 h-12 rounded-full bg-white border-2 border-gray-300 shadow-md"></div>
+                            <span class="text-gray-800">Blanc ivoire</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 border-2 border-amber-300 shadow-md"></div>
+                            <span class="text-gray-800">Crème doré</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-12 h-12 rounded-full bg-yellow-500 border-2 border-yellow-400 shadow-md"></div>
+                            <span class="text-gray-800">Jaune soleil</span>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Philosophy Tab -->
+            <article id="tab-philosophy" class="tab-content hidden">
+                <h2 class="text-3xl font-bold text-amber-700 flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    Philosophie & Sagesse
+                </h2>
+
+                <section class="bg-gradient-to-br from-amber-50 to-pink-50 p-6 rounded-lg border border-amber-400 shadow-md mb-6">
+                    <h3 class="text-2xl font-semibold text-amber-800 mb-4 italic text-center">
+                        "La vraie bataille n'est jamais contre l'autre, mais pour la connexion."
+                    </h3>
+                </section>
+
+                <section class="bg-gradient-to-r from-yellow-50 to-amber-50 p-8 rounded-lg border-2 border-amber-500 shadow-lg mb-6">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-6 text-center">Code d'Honneur</h3>
+                    <ol class="space-y-4 text-gray-800">
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">1.</span>
+                            <span class="leading-relaxed">Ne jamais prendre parti, mais défendre la relation</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">2.</span>
+                            <span class="leading-relaxed">Honorer la parole donnée comme un serment sacré</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">3.</span>
+                            <span class="leading-relaxed">Protéger les plus vulnérables dans chaque système</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">4.</span>
+                            <span class="leading-relaxed">Respecter chaque personne dans sa dignité profonde</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">5.</span>
+                            <span class="leading-relaxed">Rejeter toute forme de violence, physique ou verbale</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">6.</span>
+                            <span class="leading-relaxed">Maintenir l'intelligence relationnelle en toute circonstance</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">7.</span>
+                            <span class="leading-relaxed">Utiliser le pouvoir pour éclairer, non pour contrôler</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold text-amber-700 text-lg">8.</span>
+                            <span class="leading-relaxed">Cultiver la patience comme une discipline martiale</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="bg-gradient-to-br from-amber-100 to-yellow-100 p-8 rounded-lg border-2 border-amber-600 shadow-lg mb-6">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-4 text-center">Devise Personnelle</h3>
+                    <p class="text-2xl italic text-amber-900 text-center font-serif mb-3">
+                        "Per Amorem et Sapientiam"
+                    </p>
+                    <p class="text-lg text-amber-800 text-center font-medium">
+                        Par l'amour et la sagesse - la douceur ET la clarté
+                    </p>
+                </section>
+
+                <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md mb-4">
+                    <p class="text-xl text-amber-800 italic text-center leading-relaxed">
+                        "Dans chaque conflit se cache une danse. Je vous apprends à connaître les pas."
+                    </p>
+                </section>
+
+                <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md mb-4">
+                    <h3 class="text-xl font-semibold text-amber-700 mb-3">Principes Fondamentaux</h3>
+                    <ul class="space-y-3 text-gray-800">
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span><strong class="text-amber-700">Force dans la vulnérabilité :</strong> Le courage de montrer sa vérité désarme les conflits.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span><strong class="text-amber-700">Empathie stratégique :</strong> Comprendre l'autre sans perdre de vue ses propres besoins.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span><strong class="text-amber-700">La transformation par le dialogue :</strong> Chaque conflit porte en lui les graines d'une transformation de soi.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span><strong class="text-amber-700">L'authenticité comme arme :</strong> Seule la vérité partagée peut construire des ponts durables.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="bg-white/60 p-6 rounded-lg border border-amber-300 shadow-md mb-4">
+                    <h3 class="text-xl font-semibold text-amber-700 mb-3">Approche Unique</h3>
+                    <p class="text-gray-800 leading-relaxed mb-3">
+                        Christelle ne se contente pas de résoudre les conflits ; elle en révèle le sens caché. 
+                        Chaque tension est une invitation à plus de profondeur, chaque crise une opportunité de renaissance.
+                    </p>
+                    <p class="text-gray-800 leading-relaxed">
+                        Son approche fusionne la rigueur stratégique du management avec la sensibilité 
+                        thérapeutique, créant un espace où la transformation devient possible, que ce soit 
+                        au sein d'un couple, d'une famille ou d'une organisation professionnelle.
+                    </p>
+                </section>
+
+                <section class="bg-gradient-to-br from-amber-50 to-yellow-50 p-6 rounded-lg border border-amber-400 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-700 mb-3">Vision</h3>
+                    <p class="text-gray-800 leading-relaxed italic">
+                        "Dans un monde où les relations sont fragmentées, où les couples se déchirent, 
+                        où les familles se divisent et où les organisations s'effritent, je suis la gardienne 
+                        des liens. Je crois en la capacité de chacun à se reconnecter à soi-même et aux autres, 
+                        à transformer la douleur en sagesse et les conflits en opportunités de croissance."
+                    </p>
+                </section>
+            </article>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-600 text-sm">
+            <p class="mb-2">© 2024 Christelle GIACOMONI - Tous droits réservés</p>
+            <p class="italic">"Tisser des liens, restaurer l'harmonie, transformer les vies"</p>
+        </footer>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+            
+            // Remove active state from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-amber-500', 'text-white', 'shadow-lg', 'shadow-amber-400/50');
+                btn.classList.add('bg-amber-100', 'hover:bg-amber-200', 'text-amber-900');
+            });
+            
+            // Show selected tab
+            document.getElementById('tab-' + tabName).classList.remove('hidden');
+            
+            // Add active state to clicked button
+            const activeBtn = document.getElementById('btn-' + tabName);
+            activeBtn.classList.remove('bg-amber-100', 'hover:bg-amber-200', 'text-amber-900');
+            activeBtn.classList.add('bg-amber-500', 'text-white', 'shadow-lg', 'shadow-amber-400/50');
+        }
+    </script>
+</body>
+</html>700">Force dans la vulnérabilité :</strong> Le courage de montrer sa vérité désarme les conflits.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-600 font-bold">•</span>
+                            <span><strong class="text-amber-
