@@ -215,25 +215,43 @@
         background-color: #b8941f !important;
         transform: scale(1.1) !important;
     }
-        /* ========================================
+       /* ========================================
        📏 MARGES À GAUCHE (sauf Mission)
        ======================================== */
-    .tab-content {
-        padding-left: 0 !important;
+    
+    /* Marge générale pour toutes les pages sauf Mission */
+    #approche .container,
+    #formations .container,
+    #accompagnement .container,
+    #honneur .container,
+    #contact .container {
+        padding-left: 80px !important;
+        padding-right: 40px !important;
     }
 
-    /* Marge à gauche pour toutes les pages SAUF Mission */
-    .tab-content:not(#mission) .container {
-        padding-left: 60px !important;
-    }
-
-    /* Sur mobile, réduire la marge */
-    @media (max-width: 768px) {
-        .tab-content:not(#mission) .container {
-            padding-left: 20px !important;
+    /* Sur tablette */
+    @media (max-width: 1024px) {
+        #approche .container,
+        #formations .container,
+        #accompagnement .container,
+        #honneur .container,
+        #contact .container {
+            padding-left: 50px !important;
+            padding-right: 30px !important;
         }
     }
 
+    /* Sur mobile */
+    @media (max-width: 768px) {
+        #approche .container,
+        #formations .container,
+        #accompagnement .container,
+        #honneur .container,
+        #contact .container {
+            padding-left: 25px !important;
+            padding-right: 20px !important;
+        }
+    }
     /* ========================================
        📐 ESPACEMENT PIED DE PAGE
        ======================================== */
@@ -456,6 +474,260 @@
     @keyframes shimmer {
         0% { left: -100%; }
         100% { left: 200%; }
+    }
+     /* ========================================
+       ✨ EFFETS PAILLETTES ET ÉTOILES
+       ======================================== */
+    
+    /* Conteneur pour les particules scintillantes */
+    .sparkle-container {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        pointer-events: none !important;
+        z-index: 9999 !important;
+        overflow: hidden !important;
+    }
+
+    /* Animation des étoiles */
+    @keyframes twinkle {
+        0%, 100% { opacity: 0; transform: scale(0); }
+        50% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+    }
+
+    /* Étoiles scintillantes sur les titres */
+    h2::before {
+        content: '✨' !important;
+        position: absolute !important;
+        left: -40px !important;
+        animation: twinkle 2s ease-in-out infinite !important;
+        font-size: 24px !important;
+    }
+
+    /* Paillettes dorées au survol des cartes */
+    .card::after, .service-card::after, .value-card::after,
+    .formation-item::after, .process-step::after {
+        content: '✦' !important;
+        position: absolute !important;
+        top: 10px !important;
+        right: 10px !important;
+        font-size: 30px !important;
+        color: #d4af37 !important;
+        opacity: 0 !important;
+        transform: scale(0) rotate(0deg) !important;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+    }
+
+    .card:hover::after, .service-card:hover::after, .value-card:hover::after,
+    .formation-item:hover::after, .process-step:hover::after {
+        opacity: 1 !important;
+        transform: scale(1.5) rotate(180deg) !important;
+    }
+
+    /* ========================================
+       🎭 EFFETS 3D ET PROFONDEUR
+       ======================================== */
+    
+    /* Cartes avec perspective 3D */
+    .card, .service-card, .value-card, .formation-item {
+        transform-style: preserve-3d !important;
+        perspective: 1000px !important;
+    }
+
+    .card:hover, .service-card:hover, .value-card:hover, .formation-item:hover {
+        transform: translateY(-15px) rotateX(5deg) rotateY(5deg) scale(1.03) !important;
+        box-shadow: 
+            0 25px 50px rgba(0,0,0,0.2),
+            0 15px 30px rgba(212,175,55,0.3),
+            inset 0 -5px 15px rgba(212,175,55,0.1) !important;
+    }
+
+    /* Effet de profondeur sur les sections */
+    .container {
+        position: relative !important;
+        transform-style: preserve-3d !important;
+    }
+
+    .container::before {
+        content: '' !important;
+        position: absolute !important;
+        top: -10px !important;
+        left: -10px !important;
+        right: 10px !important;
+        bottom: 10px !important;
+        background: linear-gradient(135deg, rgba(212,175,55,0.1), transparent) !important;
+        border-radius: 15px !important;
+        z-index: -1 !important;
+        transform: translateZ(-50px) !important;
+        opacity: 0 !important;
+        transition: opacity 0.3s !important;
+    }
+
+    .container:hover::before {
+        opacity: 1 !important;
+    }
+
+    /* Ombres portées multiples pour effet 3D */
+    h1 {
+        text-shadow: 
+            2px 2px 0px rgba(212,175,55,0.3),
+            4px 4px 0px rgba(212,175,55,0.2),
+            6px 6px 0px rgba(212,175,55,0.1),
+            8px 8px 20px rgba(0,0,0,0.2) !important;
+        transform-style: preserve-3d !important;
+        transition: all 0.3s ease !important;
+    }
+
+    h1:hover {
+        transform: translateZ(10px) !important;
+        text-shadow: 
+            3px 3px 0px rgba(212,175,55,0.4),
+            6px 6px 0px rgba(212,175,55,0.3),
+            9px 9px 0px rgba(212,175,55,0.2),
+            12px 12px 30px rgba(0,0,0,0.3) !important;
+    }
+
+    /* Effet de relief sur les boutons */
+    .contact-btn, button {
+        box-shadow: 
+            0 5px 15px rgba(0,0,0,0.2),
+            inset 0 -3px 7px rgba(0,0,0,0.2),
+            inset 0 1px 3px rgba(255,255,255,0.3) !important;
+        transform-style: preserve-3d !important;
+    }
+
+    .contact-btn:hover, button:hover {
+        box-shadow: 
+            0 8px 25px rgba(212,175,55,0.4),
+            inset 0 -5px 10px rgba(0,0,0,0.3),
+            inset 0 2px 5px rgba(255,255,255,0.4) !important;
+        transform: translateY(-3px) translateZ(20px) !important;
+    }
+
+    .contact-btn:active, button:active {
+        box-shadow: 
+            0 2px 8px rgba(0,0,0,0.2),
+            inset 0 3px 7px rgba(0,0,0,0.3) !important;
+        transform: translateY(2px) translateZ(5px) !important;
+    }
+
+    /* ========================================
+       🌟 PLUIE D'ÉTOILES SUR LE HEADER
+       ======================================== */
+    
+    @keyframes starfall {
+        0% {
+            transform: translateY(-100vh) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+    header::after {
+        content: '⭐' !important;
+        position: absolute !important;
+        top: -50px !important;
+        left: 20% !important;
+        font-size: 20px !important;
+        animation: starfall 8s linear infinite !important;
+        animation-delay: 0s !important;
+    }
+
+    /* Particules dorées flottantes */
+    @keyframes goldFloat {
+        0%, 100% {
+            transform: translate(0, 0) rotate(0deg);
+            opacity: 0.3;
+        }
+        25% {
+            transform: translate(20px, -30px) rotate(90deg);
+            opacity: 0.7;
+        }
+        50% {
+            transform: translate(-10px, -60px) rotate(180deg);
+            opacity: 1;
+        }
+        75% {
+            transform: translate(-30px, -30px) rotate(270deg);
+            opacity: 0.7;
+        }
+    }
+
+    /* Paillettes sur la bannière */
+    .banniere-header::after {
+        content: '' !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-image: 
+            radial-gradient(circle, rgba(212,175,55,0.8) 1px, transparent 1px),
+            radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px) !important;
+        background-size: 50px 50px, 80px 80px !important;
+        background-position: 0 0, 40px 40px !important;
+        animation: goldFloat 15s ease-in-out infinite !important;
+        pointer-events: none !important;
+        opacity: 0.3 !important;
+    }
+
+    /* Effet de lueur dorée sur les icônes */
+    .social-link i, .contact-method i {
+        filter: drop-shadow(0 0 5px rgba(212,175,55,0)) !important;
+        transition: all 0.4s ease !important;
+    }
+
+    .social-link:hover i, .contact-method:hover i {
+        filter: drop-shadow(0 0 15px rgba(212,175,55,0.8)) 
+                drop-shadow(0 0 25px rgba(212,175,55,0.6)) !important;
+        animation: float 2s ease-in-out infinite !important;
+    }
+
+    /* Étoiles sur les coins des citations */
+    blockquote::before, .citation::before {
+        content: '✦' !important;
+        position: absolute !important;
+        top: -10px !important;
+        left: -10px !important;
+        font-size: 30px !important;
+        color: #d4af37 !important;
+        animation: twinkle 3s ease-in-out infinite !important;
+    }
+
+    blockquote::after, .citation::after {
+        content: '✦' !important;
+        position: absolute !important;
+        bottom: -10px !important;
+        right: -10px !important;
+        font-size: 30px !important;
+        color: #d4af37 !important;
+        animation: twinkle 3s ease-in-out infinite 1.5s !important;
+    }
+
+    /* Effet de profondeur sur les listes */
+    ul, ol {
+        position: relative !important;
+        transform-style: preserve-3d !important;
+    }
+
+    ul li, ol li {
+        transform: translateZ(0) !important;
+        transition: all 0.3s ease !important;
+    }
+
+    ul li:hover, ol li:hover {
+        transform: translateZ(10px) translateX(10px) !important;
+        box-shadow: -5px 5px 15px rgba(212,175,55,0.3) !important;
     }
 </style>
 </head>
