@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Médiatrice des liens - Christelle Giacomoni</title>
     <link rel="stylesheet" href="styles.css">
+<style>
+    /* Photo de profil 3cm x 3cm */
+    .profile-photo {
+        width: 113px !important;
+        height: 113px !important;
+        margin: 0 auto 1rem !important;
+        border-radius: 50% !important;
+        overflow: hidden !important;
+        border: 3px solid #d4af37 !important;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2) !important;
+    }
+
+    .profile-photo img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* Onglets : une seule page affichée à la fois */
+    .tab-content {
+        display: none !important;
+    }
+
+    .tab-content.active {
+        display: block !important;
+    }
+</style>
 </head>
 <body>
     <!-- Bannière en pleine largeur -->
