@@ -1026,7 +1026,7 @@
     <!-- Navigation par onglets -->
     <nav class="tabs">
         <button class="tab-button active" onclick="openTab(event, 'mission')">Mission</button>
-        <button class="tab-button" onclick="openTab(event, 'approche')">Approche 360°</button>
+        <button class="tab-button" onclick="openTab(event, 'approches')">Approches</button>
         <button class="tab-button" onclick="openTab(event, 'formations-expertise')">Formations & Expertises</button>
         <button class="tab-button" onclick="openTab(event, 'accompagnement')">Accompagnement</button>
         <button class="tab-button" onclick="openTab(event, 'honneur')">Code d'Honneur</button>
@@ -1211,66 +1211,267 @@
 
             </div>
 
-        <!-- ONGLET APPROCHE 360° -->
-        <div id="approche" class="tab-content">
-            <h2 style="color: #8b4513; margin-bottom: 3rem; text-align: center; font-size: 2rem;">
-                🌐 Mon Approche 360°
-            </h2>
+       <!-- ONGLET APPROCHES -->
+<div id="approches" class="tab-content">
+    <h2 style="color: #8b4513; margin-bottom: 2rem; text-align: center; font-size: 2rem;">
+        Mes Approches
+    </h2>
 
-            <h3 style="text-align: center; margin: 3rem 0 2rem;">🌐 Les 3 Sphères Interconnectées</h3>
+    <!-- SOUS-ONGLETS -->
+    <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap;">
+        <button onclick="openSubTab(event, 'approche360')" class="sub-tab-button active-sub-tab" style="background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%); color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.1rem; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+            Approche 360°
+        </button>
+        <button onclick="openSubTab(event, 'neurosciences')" class="sub-tab-button" style="background: linear-gradient(135deg, #d4af37 0%, #f0c14b 100%); color: #2c2c2c; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.1rem; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+            Neurosciences & Physique Quantique
+        </button>
+    </div>
 
-            <div class="expertise-grid">
-                <!-- SPHÈRE COUPLE -->
-                <div class="expertise-card">
-                    <div class="expertise-icon">💑</div>
-                    <h3>Sphère Couple</h3>
-                    <ul>
-                        <li>Trouver un conjoint</li>
-                        <li>Améliorer son couple et le faire durer</li>
-                        <li>Relation toxique</li>
-                    </ul>
-                </div>
+    <!-- SOUS-CONTENU 1 : APPROCHE 360° -->
+    <div id="approche360" class="sub-tab-content" style="display: block;">
+        <h3 style="color: #d4af37; font-size: 1.6rem; margin-bottom: 2rem; text-align: center;">
+            L'Accompagnement 360° : Une Vision Holistique
+        </h3>
 
-                <!-- SPHÈRE PERSONNELLE -->
-                <div class="expertise-card">
-                    <div class="expertise-icon">🧘</div>
-                    <h3>Sphère Personnelle</h3>
-                    <ul>
-                        <li>Enfants</li>
-                        <li>Famille</li>
-                        <li>Belle-famille</li>
-                    </ul>
-                </div>
-
-                <!-- SPHÈRE PROFESSIONNELLE -->
-                <div class="expertise-card">
-                    <div class="expertise-icon">💼</div>
-                    <h3>Sphère Professionnelle</h3>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/christellegiacomoni" target="_blank">Voir mon profil LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Pourquoi cette approche -->
-            <div class="symbolism-box" style="margin-top: 3rem;">
-                <h3>🌟 Pourquoi cette Approche Globale ?</h3>
-                <div class="symbolism-content">
-                    <p style="font-size: 1.05rem; line-height: 1.8;">
-                        <strong>Parce que vos problèmes ne vivent pas en silos.</strong><br><br>
-                        
-                        Un burn-out professionnel peut masquer un déséquilibre conjugal. 
-                        Un conflit familial peut saboter votre performance au travail. 
-                        Une relation toxique peut drainer toute votre énergie vitale.<br><br>
-                        
-                        En travaillant sur <strong>l'ensemble de votre écosystème relationnel</strong>, 
-                        je vous aide à <strong>identifier les schémas cachés</strong> et à créer une 
-                        <strong>harmonie durable</strong> entre toutes les sphères de votre vie.
-                    </p>
-                </div>
-            </div>
+        <div class="section-highlight">
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                Je ne traite jamais un problème de façon isolée. Chaque difficulté relationnelle est <strong>interconnectée</strong> avec d'autres aspects de votre vie. Mon approche 360° signifie que nous explorons ensemble toutes les dimensions de votre situation.
+            </p>
         </div>
 
+        <!-- Sphère Couple -->
+        <div style="background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 5px solid #d4af37; padding: 2rem; margin-bottom: 2rem; border-radius: 10px;">
+            <h4 style="color: #8b4513; font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 700;">
+                Sphère Couple
+            </h4>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.5;">
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Communication, gestion des conflits
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Répartition des responsabilités, charge mentale
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Vie intime et désir
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Projets communs et alignement
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sphère Personnelle -->
+        <div style="background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 5px solid #d4af37; padding: 2rem; margin-bottom: 2rem; border-radius: 10px;">
+            <h4 style="color: #8b4513; font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 700;">
+                Sphère Personnelle
+            </h4>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.5;">
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Estime de soi, confiance
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Émotions, stress, anxiété
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Besoins individuels vs besoins du couple
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Équilibre vie privée / vie de couple
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sphère Professionnelle -->
+        <div style="background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 5px solid #d4af37; padding: 2rem; margin-bottom: 2rem; border-radius: 10px;">
+            <h4 style="color: #8b4513; font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 700;">
+                Sphère Professionnelle
+            </h4>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.5;">
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Impact du stress professionnel sur le couple
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Gestion du temps, équilibre travail/couple
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    Reconversion, projet professionnel et impact relationnel
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-highlight" style="margin-top: 3rem;">
+            <p style="font-size: 1.05rem; line-height: 1.8; text-align: center;">
+                <strong>Mon rôle :</strong> vous aider à voir <strong>le système complet</strong>, 
+                identifier les <strong>leviers d'action prioritaires</strong>, et construire un 
+                <strong>plan d'évolution cohérent</strong> qui respecte toutes vos dimensions.
+            </p>
+        </div>
+    </div>
+
+    <!-- SOUS-CONTENU 2 : NEUROSCIENCES & PHYSIQUE QUANTIQUE -->
+    <div id="neurosciences" class="sub-tab-content" style="display: none;">
+        <h3 style="color: #d4af37; font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center;">
+            Neurosciences • Physique Quantique • Expérience Humaine • Transformation du Couple
+        </h3>
+
+        <div class="section-highlight" style="margin-bottom: 3rem;">
+            <p style="font-size: 1.1rem; line-height: 1.9; text-align: center;">
+                Dans un monde où tout s'accélère, les couples font face à des défis émotionnels, psychologiques et relationnels de plus en plus complexes.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.9; text-align: center; margin-top: 1rem;">
+                Les conflits se répètent, la communication s'effrite, l'amour semble s'épuiser, et pourtant…<br>
+                <strong>le potentiel du couple reste intact — il attend simplement d'être réactivé.</strong>
+            </p>
+            <p style="font-size: 1.15rem; line-height: 1.9; text-align: center; margin-top: 1.5rem; color: #8b4513; font-weight: 600;">
+                C'est exactement ce que propose la Méthode Relationnelle 360° :
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.9; text-align: center;">
+                une approche innovante qui combine l'<strong>expérience humaine</strong>, les <strong>neurosciences</strong>, 
+                la <strong>physique quantique</strong> et l'<strong>intelligence émotionnelle</strong> pour transformer profondément la relation.
+            </p>
+        </div>
+
+        <h4 style="color: #8b4513; font-size: 1.5rem; margin-bottom: 2rem; text-align: center; border-bottom: 3px solid #d4af37; padding-bottom: 0.8rem; display: inline-block; width: 100%;">
+            🔎 Une méthode scientifique, humaine et spirituelle à la fois
+        </h4>
+
+        <!-- 1. NEUROSCIENCES -->
+        <div style="background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 5px solid #d4af37; padding: 2rem; margin-bottom: 2.5rem; border-radius: 10px;">
+            <h5 style="color: #8b4513; font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 700;">
+                1️⃣ Les neurosciences pour comprendre les réactions du couple ou l'attirance envers certains partenaires
+            </h5>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                Grâce aux découvertes sur le cerveau, les émotions et les systèmes d'attachement, la méthode permet de :
+            </p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.5;">
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    comprendre ce qui se passe réellement lors d'un conflit ou d'une dépendance à une relation néfaste ;
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    identifier les schémas automatiques qui sabotent la relation ;
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    réguler les émotions pour éviter les escalades destructrices ;
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    développer une communication plus claire, plus apaisée et plus efficace.
+                </li>
+            </ul>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.5rem; font-style: italic; color: #8b4513;">
+                Les couples apprennent à <strong>reprogrammer leurs réponses émotionnelles</strong> pour créer de nouveaux réflexes relationnels.
+            </p>
+        </div>
+
+        <!-- 2. PHYSIQUE QUANTIQUE -->
+        <div style="background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 5px solid #d4af37; padding: 2rem; margin-bottom: 2.5rem; border-radius: 10px;">
+            <h5 style="color: #8b4513; font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 700;">
+                2️⃣ La physique quantique pour réintroduire conscience et présence
+            </h5>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                Sans entrer dans la technique, la physique quantique apporte une idée forte :<br>
+                <strong style="color: #8b4513;">Notre réalité relationnelle change lorsque notre niveau de conscience change.</strong>
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                La méthode utilise ce principe pour amener le couple à :
+            </p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.5;">
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    se reconnecter à une intention commune ;
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    créer un espace de présence où chacun peut être véritablement vu et entendu ;
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    sortir de la lutte "qui a raison / qui a tort" pour revenir à la co-création ;
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    transformer l'énergie relationnelle du conflit vers l'harmonie.
+                </li>
+            </ul>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.5rem; font-style: italic; color: #8b4513;">
+                C'est un travail profond qui réintroduit <strong>sens, alignement et clarté</strong>.
+            </p>
+        </div>
+
+        <!-- 3. APPROCHE 360° -->
+        <div style="background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 5px solid #d4af37; padding: 2rem; margin-bottom: 2.5rem; border-radius: 10px;">
+            <h5 style="color: #8b4513; font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 700;">
+                3️⃣ Une approche 360° : complète, concrète et humaine
+            </h5>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                La force de la méthode repose sur une vision globale du couple :
+            </p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2.5;">
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    <strong>Émotionnelle :</strong> gestion des blessures, peurs, attentes.
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    <strong>Psychologique :</strong> compréhension des comportements, besoins et limites.
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    <strong>Relationnelle :</strong> communication, écoute, sécurité affective.
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    <strong>Énergétique & spirituelle :</strong> présence, intention, conscience.
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #d4af37; font-size: 1.4rem; margin-right: 0.8rem;">●</span>
+                    <strong>Pratique :</strong> outils simples à appliquer au quotidien.
+                </li>
+            </ul>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.5rem; font-style: italic; color: #8b4513;">
+                Chaque couple repart avec un <strong>plan d'évolution clair</strong>, adapté à sa situation, et surtout <strong>rapidement applicable</strong>.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+// GESTION DES SOUS-ONGLETS
+function openSubTab(evt, subTabName) {
+    // Masquer tous les sous-contenus
+    var subContents = document.getElementsByClassName("sub-tab-content");
+    for (var i = 0; i < subContents.length; i++) {
+        subContents[i].style.display = "none";
+    }
+    
+    // Retirer la classe active de tous les sous-boutons
+    var subButtons = document.getElementsByClassName("sub-tab-button");
+    for (var i = 0; i < subButtons.length; i++) {
+        subButtons[i].classList.remove("active-sub-tab");
+        subButtons[i].style.opacity = "0.7";
+    }
+    
+    // Afficher le sous-contenu sélectionné
+    document.getElementById(subTabName).style.display = "block";
+    evt.currentTarget.classList.add("active-sub-tab");
+    evt.currentTarget.style.opacity = "1";
+}
+</script>
        <!-- ONGLET FORMATIONS & EXPERTISES -->
 <div id="formations-expertise" class="tab-content">
     <h2 style="color: #8b4513; margin-bottom: 3rem; text-align: center; font-size: 2rem;">
