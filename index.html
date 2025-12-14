@@ -1912,10 +1912,9 @@ function openSubTab(evt, subTabName) {
         </h3>
 
         <!-- Formulaire -->
-        <form 
-            class="contact-form" 
-            action="https://formspree.io/f/xgvgzvzp" 
-            method="POST"
+        <form class="contact-form" 
+    action="https://formspree.io/f/xnnqvobo" 
+    method="POST"
             style="
                 background: white;
                 padding: 3rem;
@@ -2410,6 +2409,50 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
     document.getElementById("scrollTop").onclick = function() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     };
+
+        // ========== GESTION DU FORMULAIRE DE CONTACT ==========
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.contact-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const statusDiv = document.getElementById('form-status');
+                const btn = this.querySelector('button[type="submit"]');
+                
+                btn.disabled = true;
+                btn.textContent = '⏳ Envoi en cours...';
+                
+                fetch(this.action, {
+                    method: 'POST',
+                    body: new FormData(this),
+                    headers: {'Accept': 'application/json'}
+                })
+                .then(response => {
+                    if (response.ok) {
+                        statusDiv.style.background = '#d4edda';
+                        statusDiv.style.color = '#155724';
+                        statusDiv.style.border = '2px solid #c3e6cb';
+                        statusDiv.textContent = '✅ Message envoyé avec succès !';
+                        statusDiv.style.display = 'block';
+                        this.reset();
+                    } else {
+                        throw new Error('Erreur');
+                    }
+                })
+                .catch(() => {
+                    statusDiv.style.background = '#f8d7da';
+                    statusDiv.style.color = '#721c24';
+                    statusDiv.style.border = '2px solid #f5c6cb';
+                    statusDiv.textContent = '❌ Erreur d\'envoi. Réessayez.';
+                    statusDiv.style.display = 'block';
+                })
+                .finally(() => {
+                    btn.disabled = false;
+                    btn.textContent = '📤 Envoyer mon message';
+                });
+            });
+        }
+    });
 
     // Animation des cartes au scroll
     const observerOptions = {
