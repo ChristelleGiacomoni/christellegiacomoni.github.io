@@ -1028,7 +1028,7 @@
                 <img src="profil.jpg" alt="Christelle Giacomoni">
             </div>
             <!-- 📬 BOX NEWSLETTER DANS LE HERO -->
-<div style="background: linear-gradient(135deg, #fff9e6 0%, #fffef7 100%); border: 3px solid #d4af37; border-radius: 15px; padding: 25px; max-width: 500px; margin: 30px auto; box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3); text-align: center;">
+<div style="background: linear-gradient(135deg, #fff9e6 0%, #fffef7 100%); border: 3px solid #d4af37; border-radius: 15px; padding: 25px; max-width: 500px; margin: 30px auto; box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3); text-align: center; position: relative; z-index: 100;">
     <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 22px; font-family: 'Cinzel', Georgia, serif;">
         📬 Restez connecté·e
     </h3>
@@ -1036,13 +1036,24 @@
         Recevez mes <strong>conseils exclusifs</strong> en médiation, mes <strong>dernières publications</strong> et mes <strong>événements</strong> directement dans votre boîte mail.
     </p>
     <a href="#newsletter" 
-       onclick="document.getElementById('newsletter').scrollIntoView({behavior: 'smooth'}); return false;"
-       style="display: inline-block; background: linear-gradient(135deg, #d4af37 0%, #c49b33 100%); color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); transition: all 0.3s; cursor: pointer; font-family: 'Lato', sans-serif;"
-       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(212, 175, 55, 0.5)';"
-       onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(212, 175, 55, 0.4)';">
+       id="btn-newsletter-hero"
+       style="display: inline-block; background: linear-gradient(135deg, #d4af37 0%, #c49b33 100%); color: white !important; padding: 12px 30px; border-radius: 30px; text-decoration: none !important; font-weight: 600; font-size: 16px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); transition: all 0.3s; cursor: pointer !important; font-family: 'Lato', sans-serif; position: relative; z-index: 101; pointer-events: auto !important;">
         ✉️ Je m'inscris gratuitement
     </a>
 </div>
+
+<script>
+// Force le clic à fonctionner
+document.getElementById('btn-newsletter-hero').addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.getElementById('newsletter');
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+        alert('📬 Formulaire en cours de chargement. Descendez vers le bas de la page !');
+    }
+});
+</script>
             <h1>La Médiatrice des Liens</h1>
             <p class="subtitle">Christelle Giacomoni</p>
             <div class="tagline">
